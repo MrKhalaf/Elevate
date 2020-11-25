@@ -28,14 +28,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5c1d5c7-b2a6-47e4-921a-27ec0d4269a3" name="Default Changelist" comment="starter code">
-      <change afterPath="$PROJECT_DIR$/elevator.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elevator.c" beforeDir="false" afterPath="$PROJECT_DIR$/elevator_part_1.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
@@ -53,9 +54,9 @@
     <property name="cf.first.check.clang-format" value="false" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -67,7 +68,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606264865330</updated>
-      <workItem from="1606264866749" duration="2156000" />
+      <workItem from="1606264866749" duration="2388000" />
+      <workItem from="1606342175608" duration="1917000" />
     </task>
     <task id="LOCAL-00001" summary="starter code">
       <created>1606265045531</created>
@@ -83,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606265191543</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="starter code">
+      <created>1606315730393</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606315730393</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,15 +108,20 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="starter code" />
     <option name="LAST_COMMIT_MESSAGE" value="starter code" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="163" y="175" key="Vcs.Push.Dialog.v2" timestamp="1606265211676">
+    <state x="163" y="175" key="Vcs.Push.Dialog.v2" timestamp="1606315746403">
       <screen x="0" y="23" width="1440" height="852" />
     </state>
-    <state x="163" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.852@0.23.1440.852" timestamp="1606265211676" />
+    <state x="163" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.852@0.23.1440.852" timestamp="1606315746403" />
+    <state x="364" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606342183963">
+      <screen x="0" y="23" width="1440" height="852" />
+    </state>
+    <state x="364" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.852@0.23.1440.852" timestamp="1606342183963" />
   </component>
 </project>
