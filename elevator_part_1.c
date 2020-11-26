@@ -95,6 +95,11 @@ void wait_to_get_off_elevator(Person *p)
 void person_done(Person *p)
 {
     /* The following is called after a person gets off the elevator. */
+    //signal elevator
+    Elevator el = p->e;
+    pthread_mutex_lock(el->lock);
+    pthread_cond_signal(el->cond);
+    pthread_mutex_unlock(el->lock);
 }
 
 
