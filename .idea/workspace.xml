@@ -27,9 +27,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5c1d5c7-b2a6-47e4-921a-27ec0d4269a3" name="Default Changelist" comment="starter code">
+    <list default="true" id="e5c1d5c7-b2a6-47e4-921a-27ec0d4269a3" name="Default Changelist" comment="beginning functions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elevator.c" beforeDir="false" afterPath="$PROJECT_DIR$/elevator_part_1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elevator_part_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/elevator_part_1.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606264865330</updated>
       <workItem from="1606264866749" duration="2388000" />
-      <workItem from="1606342175608" duration="1917000" />
+      <workItem from="1606342175608" duration="5683000" />
     </task>
     <task id="LOCAL-00001" summary="starter code">
       <created>1606265045531</created>
@@ -92,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606315730393</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="beginning functions">
+      <created>1606347107392</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606347107392</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,13 +119,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="starter code" />
-    <option name="LAST_COMMIT_MESSAGE" value="starter code" />
+    <MESSAGE value="beginning functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="beginning functions" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="163" y="175" key="Vcs.Push.Dialog.v2" timestamp="1606315746403">
+    <state x="163" y="175" key="Vcs.Push.Dialog.v2" timestamp="1606347110512">
       <screen x="0" y="23" width="1440" height="852" />
     </state>
-    <state x="163" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.852@0.23.1440.852" timestamp="1606315746403" />
+    <state x="163" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.852@0.23.1440.852" timestamp="1606347110512" />
     <state x="364" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606342183963">
       <screen x="0" y="23" width="1440" height="852" />
     </state>

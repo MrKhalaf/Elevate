@@ -10,12 +10,15 @@
 #include <pthread.h>
 #include "elevator.h"
 
+Dllist people_list;
+pthread_cond_t arrived;
+pthread_cond_t holding;
 
 void initialize_simulation(Elevator_Simulation *es)
 {
     /* Called once at the beginning of the simulation */
     people_list = new_dllist();
-    //condition vars for blocking elevators
+    holding = PTHREAD_COND_INITIALIZER;
 
 }
 
@@ -26,21 +29,18 @@ void initialize_elevator(Elevator *e)
     e->door_open = 0;
     e->moving = 0;
     e->people = NULL;
+    e->cond = holding;
+    e->lock = PTHREAD_MUTEX_INITIALIZER;
 
-    int id;             /* Elevator id */
-    int onfloor;        /* What floor the elevator is currently on */
-    int door_open;      /* Whether the door is open */
-    int moving;         /* Whether the elevator is moving */
-    Dllist people;      /* Dllist of people on the elevator */
-    pthread_mutex_t *lock;
-    pthread_cond_t *cond;
-    void *v;
-    Elevator_Simulation *es;
 }
 
 void initialize_person(Person *e)
 {
     /* Called once for each person, before the thread is created */
+    e->from = 0;
+    e->cond = arrived;
+    e->lock = PTHREAD_MUTEX_INITIALIZER;
+
 }
 
 void wait_for_elevator(Person *p)
@@ -48,7 +48,13 @@ void wait_for_elevator(Person *p)
     /* The following is called when a person first enters the system.
    It should block until an elevator is on the person's "from" floor
    and the door is open.  When it does so, the person's e field
-   should point to the elevator on which the person should get.  */
+   should point to the elevator on which the person should get.
+
+     : append the person to the global list. Signal the
+condition variable for blocking elevators. Block on the person’s condition variable
+
+     */
+    dll_append(people_list, Jval val)
 }
 
 void wait_to_get_off_elevator(Person *p)
