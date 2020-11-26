@@ -57,12 +57,17 @@ void wait_for_elevator(Person *p)
 condition variable for blocking elevators. Block on the person’s condition variable
 
      */
-    dll_append(people_list, new_jval_v(p));
+    DLlist *position;
+    position = (DLlist *)(p->es->v);
 
-    people_list = p->es->v;
     pthread_mutex_lock(p->es->lock);
+    dll_append(people_list, new_jval_v(p));
     pthread_cond_signal(holding);
     pthread_mutex_unlock(p->es->lock);
+
+    pthread_mutex_lock(p->lock);
+    pthread_cond_wait(p->cond, p->lock);
+    pthread_mutex_unlock(p->lock);
 
 }
 
@@ -72,6 +77,17 @@ void wait_to_get_off_elevator(Person *p)
     /* The following is called after a person gets on the elevator.  It should block
    until the person is at his/her destination floor, and the elevator's
    door is open. */
+
+    //signal elevator
+    Elevator el = p->e;
+    pthread_mutex_lock(el->lock);
+    pthread_cond_signal(el->cond);
+    pthread_mutex_unlock(el->lock);
+
+    //block person
+    pthread_mutex_lock(p->lock);
+    pthread_cond_wait(p->cond, p->lock);
+    pthread_mutex_unlock(p->lock);
 }
 
 
