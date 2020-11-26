@@ -11,14 +11,16 @@
 #include "elevator.h"
 
 Dllist people_list;
-pthread_cond_t arrived;
 pthread_cond_t holding;
 
 void initialize_simulation(Elevator_Simulation *es)
 {
     /* Called once at the beginning of the simulation */
     people_list = new_dllist();
-    holding = PTHREAD_COND_INITIALIZER;
+    holding = (pthread_cond_t *)malloc(sizeof(pthread_cond_t));
+    pthread_cond_init(holding, NULL);
+
+    es->v = people_list;    //void pointer to list of people
 
 }
 
@@ -43,6 +45,7 @@ void initialize_person(Person *e)
 
 }
 
+//LF
 void wait_for_elevator(Person *p)
 {
     /* The following is called when a person first enters the system.
@@ -54,9 +57,16 @@ void wait_for_elevator(Person *p)
 condition variable for blocking elevators. Block on the person’s condition variable
 
      */
-    dll_append(people_list, Jval val)
+    dll_append(people_list, new_jval_v(p));
+
+    people_list = p->es->v;
+    pthread_mutex_lock(p->es->lock);
+    pthread_cond_signal(holding);
+    pthread_mutex_unlock(p->es->lock);
+
 }
 
+//LF
 void wait_to_get_off_elevator(Person *p)
 {
     /* The following is called after a person gets on the elevator.  It should block
@@ -64,11 +74,15 @@ void wait_to_get_off_elevator(Person *p)
    door is open. */
 }
 
+
+//MK
 void person_done(Person *p)
 {
     /* The following is called after a person gets off the elevator. */
 }
 
+
+//MK
 void *elevator(void *arg)
 {
     /* The following is the main elevator thread.  It can only move and open/close
