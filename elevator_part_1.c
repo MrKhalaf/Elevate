@@ -7,21 +7,23 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <pthread.h>
 #include "elevator.h"
 
 Dllist people_list;
-
+pthread_cond_t *holding;
+pthread_cond_t *arrived;
 
 void initialize_simulation(Elevator_Simulation *es)
 {
     /* Called once at the beginning of the simulation */
     people_list = new_dllist();
-    holding = (pthread_cond_t *)malloc(sizeof(pthread_cond_t));
+    holding = (pthread_cond_t *) malloc(sizeof(pthread_cond_t));
     pthread_cond_init(holding, NULL);
 
-    es->lock = PTHREAD_MUTEX_INITIALIZER;
-
+    arrived = (pthread_cond_t *) malloc(sizeof(pthread_cond_t));
+    pthread_cond_init(arrived, NULL);
     es->v = people_list;    //void pointer to list of people
 
 }
@@ -34,7 +36,6 @@ void initialize_elevator(Elevator *e)
     e->moving = 0;
     e->people = NULL;
     e->cond = holding;
-    e->lock = PTHREAD_MUTEX_INITIALIZER;
     // need to assign es here?
 
 }
@@ -44,7 +45,6 @@ void initialize_person(Person *e)
     /* Called once for each person, before the thread is created */
     e->from = 0;
     e->cond = arrived;
-    e->lock = PTHREAD_MUTEX_INITIALIZER;
 
 }
 
@@ -60,8 +60,8 @@ void wait_for_elevator(Person *p)
 condition variable for blocking elevators. Block on the person’s condition variable
 
      */
-    DLlist *position;
-    position = (DLlist *)(p->es->v);
+    Dllist *position;
+    position = (Dllist *)(p->es->v);
 
     pthread_mutex_lock(p->es->lock);
     dll_append(people_list, new_jval_v(p));
@@ -82,7 +82,7 @@ void wait_to_get_off_elevator(Person *p)
    door is open. */
 
     //signal elevator
-    Elevator el = p->e;
+    Elevator *el = p->e;
     pthread_mutex_lock(el->lock);
     pthread_cond_signal(el->cond);
     pthread_mutex_unlock(el->lock);
@@ -99,7 +99,7 @@ void person_done(Person *p)
 {
     /* The following is called after a person gets off the elevator. */
     //signal elevator
-    Elevator el = p->e;
+    Elevator *el = p->e;
     pthread_mutex_lock(el->lock);
     pthread_cond_signal(el->cond);
     pthread_mutex_unlock(el->lock);
@@ -113,7 +113,7 @@ void *elevator(void *arg)
    its doors using the given procedures.
      */
 
-    Elevator *el = (Elevator) arg;
+    Elevator *el = (Elevator *) arg;
     Person *p;
 
     while (1) {
@@ -122,7 +122,7 @@ void *elevator(void *arg)
         while(dll_empty(people_list)) {
             pthread_cond_wait(holding, el->es->lock);
         }
-        pthread_mutex_unlock(el->es.lock);
+        pthread_mutex_unlock(el->es->lock);
 
         // When the elevator gets a person to service . . .
         pthread_mutex_lock(el->es->lock);

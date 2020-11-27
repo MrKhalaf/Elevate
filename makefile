@@ -1,5 +1,5 @@
-#EXECUTABLES = elevator_null elevator_part_1 reorder double-check
-EXECUTABLES = elevator_null elevator_part_1 elevator_part_2 reorder double-check
+EXECUTABLES = elevator_null elevator_part_1 reorder double-check
+#EXECUTABLES = elevator_null elevator_part_1 elevator_part_2 reorder double-check
 
 CC = gcc
 LIBS = libfdr.a
@@ -25,8 +25,8 @@ elevator_null: elevator_skeleton.o elevator_null.o finesleep.o libfdr.a
 elevator_part_1: elevator_skeleton.o elevator_part_1.o finesleep.o libfdr.a
 	$(CC) $(CFLAGS) -o elevator_part_1 elevator_skeleton.o elevator_part_1.o finesleep.o $(LIBS) -lpthread -lm
 
-elevator_part_2: elevator_skeleton.o elevator_part_2.o finesleep.o libfdr.a
-	$(CC) $(CFLAGS) -o elevator_part_2 elevator_skeleton.o elevator_part_2.o finesleep.o $(LIBS) -lpthread -lm
+# elevator_part_2: elevator_skeleton.o elevator_part_2.o finesleep.o libfdr.a
+# 	$(CC) $(CFLAGS) -o elevator_part_2 elevator_skeleton.o elevator_part_2.o finesleep.o $(LIBS) -lpthread -lm
 
 elevator_skeleton.o: elevator.h names.h
 elevator.o: elevator.h
