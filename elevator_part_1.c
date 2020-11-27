@@ -39,15 +39,6 @@ void initialize_person(Person *e)
 //LF
 void wait_for_elevator(Person *p)
 {
-    /* The following is called when a person first enters the system.
-   It should block until an elevator is on the person's "from" floor
-   and the door is open.  When it does so, the person's e field
-   should point to the elevator on which the person should get.
-
-     : append the person to the global list. Signal the
-condition variable for blocking elevators. Block on the person’s condition variable
-
-     */
     Dllist *position;
     position = (Dllist *)(p->es->v);
 
@@ -59,7 +50,6 @@ condition variable for blocking elevators. Block on the person’s condition var
     pthread_mutex_lock(p->lock);
     pthread_cond_wait(p->cond, p->lock);
     pthread_mutex_unlock(p->lock);
-
 }
 
 //LF
