@@ -30,22 +30,10 @@ void initialize_simulation(Elevator_Simulation *es)
 
 void initialize_elevator(Elevator *e)
 {
-    /* Called once for each elevator, before the thread is created */
-    e->onfloor = 0;
-    e->door_open = 0;
-    e->moving = 0;
-    e->people = NULL;
-    e->cond = holding;
-    // need to assign es here?
-
 }
 
 void initialize_person(Person *e)
 {
-    /* Called once for each person, before the thread is created */
-    e->from = 0;
-    e->cond = arrived;
-
 }
 
 //LF
