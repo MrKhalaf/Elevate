@@ -11,7 +11,7 @@
 #include "elevator.h"
 
 Dllist people_list;
-pthread_cond_t holding;
+
 
 void initialize_simulation(Elevator_Simulation *es)
 {
@@ -19,6 +19,8 @@ void initialize_simulation(Elevator_Simulation *es)
     people_list = new_dllist();
     holding = (pthread_cond_t *)malloc(sizeof(pthread_cond_t));
     pthread_cond_init(holding, NULL);
+
+    es->lock = PTHREAD_MUTEX_INITIALIZER;
 
     es->v = people_list;    //void pointer to list of people
 
@@ -33,6 +35,7 @@ void initialize_elevator(Elevator *e)
     e->people = NULL;
     e->cond = holding;
     e->lock = PTHREAD_MUTEX_INITIALIZER;
+    // need to assign es here?
 
 }
 
@@ -107,6 +110,51 @@ void person_done(Person *p)
 void *elevator(void *arg)
 {
     /* The following is the main elevator thread.  It can only move and open/close
-   its doors using the given procedures. */
-    return NULL;
+   its doors using the given procedures.
+     */
+
+    Elevator *el = (Elevator) arg;
+    Person *p;
+
+    while (1) {
+        // If global list is empty, block on elevators condition
+        pthread_mutex_lock(el->es->lock);
+        while(dll_empty(people_list)) {
+            pthread_cond_wait(holding, el->es->lock);
+        }
+        pthread_mutex_unlock(el->es.lock);
+
+        // When the elevator gets a person to service . . .
+        pthread_mutex_lock(el->es->lock);
+        p = jval_v(dll_val(dll_first(people_list)));
+        dll_delete_node(people_list->flink); // may also need to delete the backlink?
+        pthread_mutex_unlock(el->es->lock);
+
+        // it moves to the appropriate floor and opens its door.
+        move_to_floor(el, p->from);
+        open_door(el);
+        //It puts itself into the person’s e field
+        p->e = el;
+
+        // then signals the person and blocks until the person wakes it up.
+        pthread_mutex_lock(el->lock);
+        pthread_cond_signal(p->cond);
+        pthread_cond_wait(el->cond, el->lock);
+        pthread_mutex_unlock(el->lock);
+
+        // el goes to the person’s destination floor
+        close_door(el);
+        move_to_floor(el, p->to);
+
+        // opens its door, signals the person and blocks.
+        open_door(el);
+        pthread_mutex_lock(el->lock);
+        pthread_cond_signal(p->cond);
+        pthread_cond_wait(el->cond, el->lock);
+        pthread_mutex_unlock(el->lock);
+
+        // When the person wakes it up, it closes its door and re-executes its while loop.
+        close_door(el);
+
+    }
 }

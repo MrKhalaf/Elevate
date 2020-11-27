@@ -28,6 +28,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5c1d5c7-b2a6-47e4-921a-27ec0d4269a3" name="Default Changelist" comment="wait_for_elevator and wait_to_get_off_elevator">
+      <change beforePath="$PROJECT_DIR$/.idea/Elevate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Elevate.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elevator_part_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/elevator_part_1.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,11 +53,23 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="CLionExternalConfigurable" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ELP1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -70,6 +84,7 @@
       <workItem from="1606264866749" duration="2388000" />
       <workItem from="1606342175608" duration="8794000" />
       <workItem from="1606421483881" duration="1147000" />
+      <workItem from="1606433812015" duration="3718000" />
     </task>
     <task id="LOCAL-00001" summary="starter code">
       <created>1606265045531</created>
@@ -145,13 +160,38 @@
     <option name="LAST_COMMIT_MESSAGE" value="wait_for_elevator and wait_to_get_off_elevator" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-1071" y="-370" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606435964664">
+      <screen x="-1920" y="-595" width="1920" height="1057" />
+    </state>
+    <state x="-1071" y="-370" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606435964664" />
+    <state x="-1189" y="-218" key="#com.intellij.tools.ToolEditorDialog" timestamp="1606435924737">
+      <screen x="-1920" y="-595" width="1920" height="1057" />
+    </state>
+    <state x="-1189" y="-218" key="#com.intellij.tools.ToolEditorDialog/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606435924737" />
+    <state x="-1453" y="-416" key="SettingsEditor" timestamp="1606435930336">
+      <screen x="-1920" y="-595" width="1920" height="1057" />
+    </state>
+    <state x="-1453" y="-416" key="SettingsEditor/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606435930336" />
     <state x="163" y="175" key="Vcs.Push.Dialog.v2" timestamp="1606432077692">
       <screen x="0" y="23" width="1440" height="852" />
     </state>
     <state x="163" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.852@0.23.1440.852" timestamp="1606432077692" />
-    <state x="364" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606431616151">
-      <screen x="0" y="23" width="1440" height="852" />
+    <state x="-1435" y="-166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606444286303">
+      <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
     <state x="364" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.852@0.23.1440.852" timestamp="1606431616151" />
+    <state x="-1435" y="-166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606444286303" />
+    <state x="-1066" y="-313" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey" timestamp="1606435925987">
+      <screen x="-1920" y="-595" width="1920" height="1057" />
+    </state>
+    <state x="-1066" y="-313" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606435925987" />
+    <state x="-1675" y="-434" width="586" height="735" key="find.popup" timestamp="1606434762374">
+      <screen x="-1920" y="-595" width="1920" height="1057" />
+    </state>
+    <state x="-1675" y="-434" width="586" height="735" key="find.popup/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606434762374" />
+    <state x="-1717" y="-360" width="670" height="676" key="search.everywhere.popup" timestamp="1606436239551">
+      <screen x="-1920" y="-595" width="1920" height="1057" />
+    </state>
+    <state x="-1717" y="-360" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606436239551" />
   </component>
 </project>
