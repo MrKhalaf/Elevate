@@ -27,7 +27,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5c1d5c7-b2a6-47e4-921a-27ec0d4269a3" name="Default Changelist" comment="wait_for_elevator and wait_to_get_off_elevator">
+    <list default="true" id="e5c1d5c7-b2a6-47e4-921a-27ec0d4269a3" name="Default Changelist" comment="initialize funcs">
+      <change afterPath="$PROJECT_DIR$/elevator_part_2.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +64,11 @@
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -135,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606444305378</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="initialize funcs">
+      <created>1606447153117</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606447153117</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +170,8 @@
     <MESSAGE value="starter code" />
     <MESSAGE value="beginning functions" />
     <MESSAGE value="wait_for_elevator and wait_to_get_off_elevator" />
-    <option name="LAST_COMMIT_MESSAGE" value="wait_for_elevator and wait_to_get_off_elevator" />
+    <MESSAGE value="initialize funcs" />
+    <option name="LAST_COMMIT_MESSAGE" value="initialize funcs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1071" y="-370" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606435964664">
@@ -172,10 +186,10 @@
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
     <state x="-1453" y="-416" key="SettingsEditor/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606435930336" />
-    <state x="-1703" y="-406" key="Vcs.Push.Dialog.v2" timestamp="1606444307801">
-      <screen x="-1920" y="-595" width="1920" height="1057" />
+    <state x="163" y="175" key="Vcs.Push.Dialog.v2" timestamp="1606447155015">
+      <screen x="0" y="23" width="1440" height="852" />
     </state>
-    <state x="163" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.852@0.23.1440.852" timestamp="1606432077692" />
+    <state x="163" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.852@0.23.1440.852" timestamp="1606447155015" />
     <state x="-1703" y="-406" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606444307801" />
     <state x="-1435" y="-166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606444286303">
       <screen x="-1920" y="-595" width="1920" height="1057" />
