@@ -75,5 +75,13 @@ void person_done(Person *p)
 
 void *elevator(void *arg)
 {
+    //LF
+    check_for_people_to_unload();
+
+    //LF
+    check_for_people_to_load();
+
+    //MK
+    move();
     return NULL;
 }

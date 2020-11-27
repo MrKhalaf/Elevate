@@ -72,7 +72,7 @@ void wait_to_get_off_elevator(Person *p)
 }
 
 
-//MK
+//LF
 void person_done(Person *p)
 {
     /* The following is called after a person gets off the elevator. */
