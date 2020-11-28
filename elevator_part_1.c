@@ -95,7 +95,7 @@ void *elevator(void *arg)
     Person *p;
 
     while (1) {
-        // If global list is empty, block on elevators condition
+        // if no people in simulation yet
         pthread_mutex_lock(el->es->lock);
         while(dll_empty(people_list)) {
             pthread_cond_wait(holding, el->es->lock);

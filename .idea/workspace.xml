@@ -62,11 +62,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -85,6 +80,7 @@
       <workItem from="1606342175608" duration="8794000" />
       <workItem from="1606421483881" duration="1147000" />
       <workItem from="1606433812015" duration="5347000" />
+      <workItem from="1606522185468" duration="2036000" />
     </task>
     <task id="LOCAL-00001" summary="starter code">
       <created>1606265045531</created>
@@ -163,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606447643831</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="elevator pt 2">
+      <created>1606448770499</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1606448770499</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,15 +205,15 @@
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
     <state x="-1453" y="-416" key="SettingsEditor/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606435930336" />
-    <state x="163" y="175" key="Vcs.Push.Dialog.v2" timestamp="1606447645316">
+    <state x="163" y="175" key="Vcs.Push.Dialog.v2" timestamp="1606448771991">
       <screen x="0" y="23" width="1440" height="852" />
     </state>
-    <state x="163" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.852@0.23.1440.852" timestamp="1606447645316" />
+    <state x="163" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.852@0.23.1440.852" timestamp="1606448771991" />
     <state x="-1703" y="-406" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606444307801" />
-    <state x="-1435" y="-166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606444286303">
-      <screen x="-1920" y="-595" width="1920" height="1057" />
+    <state x="364" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606522339118">
+      <screen x="0" y="23" width="1440" height="852" />
     </state>
-    <state x="364" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.852@0.23.1440.852" timestamp="1606431616151" />
+    <state x="364" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.852@0.23.1440.852" timestamp="1606522339118" />
     <state x="-1435" y="-166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606444286303" />
     <state x="-1066" y="-313" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey" timestamp="1606435925987">
       <screen x="-1920" y="-595" width="1920" height="1057" />
