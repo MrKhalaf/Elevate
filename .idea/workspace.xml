@@ -27,10 +27,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5c1d5c7-b2a6-47e4-921a-27ec0d4269a3" name="Default Changelist" comment="elevator pt 2">
+    <list default="true" id="e5c1d5c7-b2a6-47e4-921a-27ec0d4269a3" name="Default Changelist" comment="elevator func">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elevator_part_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/elevator_part_1.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elevator_part_2.c" beforeDir="false" afterPath="$PROJECT_DIR$/elevator_part_2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/makefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,11 +62,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -80,7 +75,8 @@
       <workItem from="1606342175608" duration="8794000" />
       <workItem from="1606421483881" duration="1147000" />
       <workItem from="1606433812015" duration="5347000" />
-      <workItem from="1606522185468" duration="2036000" />
+      <workItem from="1606522185468" duration="2444000" />
+      <workItem from="1606588744852" duration="1154000" />
     </task>
     <task id="LOCAL-00001" summary="starter code">
       <created>1606265045531</created>
@@ -166,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606448770499</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="elevator func">
+      <created>1606524306732</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1606524306732</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,7 +193,8 @@
     <MESSAGE value="wait_for_elevator and wait_to_get_off_elevator" />
     <MESSAGE value="initialize funcs" />
     <MESSAGE value="elevator pt 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="elevator pt 2" />
+    <MESSAGE value="elevator func" />
+    <option name="LAST_COMMIT_MESSAGE" value="elevator func" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1071" y="-370" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606435964664">
@@ -205,15 +209,15 @@
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
     <state x="-1453" y="-416" key="SettingsEditor/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606435930336" />
-    <state x="163" y="175" key="Vcs.Push.Dialog.v2" timestamp="1606448771991">
+    <state x="163" y="175" key="Vcs.Push.Dialog.v2" timestamp="1606524308927">
       <screen x="0" y="23" width="1440" height="852" />
     </state>
-    <state x="163" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.852@0.23.1440.852" timestamp="1606448771991" />
+    <state x="163" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.852@0.23.1440.852" timestamp="1606524308927" />
     <state x="-1703" y="-406" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606444307801" />
-    <state x="364" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606522339118">
+    <state x="364" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606588749731">
       <screen x="0" y="23" width="1440" height="852" />
     </state>
-    <state x="364" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.852@0.23.1440.852" timestamp="1606522339118" />
+    <state x="364" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.852@0.23.1440.852" timestamp="1606588749731" />
     <state x="-1435" y="-166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606444286303" />
     <state x="-1066" y="-313" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey" timestamp="1606435925987">
       <screen x="-1920" y="-595" width="1920" height="1057" />

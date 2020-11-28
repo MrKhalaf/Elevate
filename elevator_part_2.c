@@ -25,6 +25,10 @@ void initialize_simulation(Elevator_Simulation *es)
 
     arrived = (pthread_cond_t *) malloc(sizeof(pthread_cond_t));
     pthread_cond_init(arrived, NULL);
+
+    global_lock = (pthread_mutex_t *) malloc(sizeof(pthread_mutex_t));
+    pthread_mutex_init(global_lock, NULL);
+
     es->v = people_list;    //void pointer to list of people
 
 }
@@ -75,11 +79,11 @@ void person_done(Person *p)
 }
 
 void check_for_people_to_unload(Elevator * el) {
-    temp = el->people;
+    Dllist temp = el->people->flink;
 
     //iterate through people on the elevator
     while (temp->flink != NULL) {
-        p = (Person *) temp->v;
+        Person * p = (Person *)(temp->val.v);
 
         //if person is getting off, signal person
         if (el->onfloor == p->to) {
@@ -98,14 +102,14 @@ void check_for_people_to_unload(Elevator * el) {
     }
 }
 
-void check_for_people_to_load(Elevator * el, Dllist to_unload) {
+void check_for_people_to_load(Elevator * el, Dllist to_unload, int direction) {
     pthread_mutex_lock(global_lock);
-    temp = people_list;
+    Dllist temp = people_list->flink;
     while (temp->flink != NULL) {
-        p = (Person *) temp->v;
+        Person * p = (Person *)(temp->val.v);
 
-        if (el->onfloor == p->from) && (((p->to > el->onfloor) && (direction == 1)) || ((p->to < el->onfloor) && (direction == 0))) {
-            dll_append(to_unload, temp->v);
+        if ((el->onfloor == p->from) && (((p->to > el->onfloor) && (direction == 1)) || ((p->to < el->onfloor) && (direction == 0)))) {
+            dll_append(to_unload, temp->val);
         }
 
         temp = temp->flink;
@@ -121,14 +125,14 @@ void *elevator(void *arg)
     int direction = 1;
     Dllist to_unload;
 
-    //while (1) {
+    while (1) {
 
         //if no people in simulation yet
         pthread_mutex_lock(el->es->lock);
         while(people_list == NULL) {
             pthread_cond_wait(holding, el->es->lock);
         }
-        pthread_mutex_unlock(el->es->lock)
+        pthread_mutex_unlock(el->es->lock);
 
         if (el->onfloor == 1) {
             direction = 1;
@@ -137,11 +141,11 @@ void *elevator(void *arg)
         }
 
         //LF
-        check_for_people_to_load(el, to_unload);
+        check_for_people_to_load(el, to_unload, direction);
 
-        temp = to_unload;
+        Dllist temp = to_unload->flink;
         while (temp->flink != NULL) {
-            p = (Person *) temp->v;
+            p = (Person *) temp->val.v;
             if (el->door_open == 0) {
                 open_door(el);
             }
@@ -150,10 +154,10 @@ void *elevator(void *arg)
             p->e = el;
             pthread_cond_signal(p->cond);
             pthread_mutex_lock(el->lock);
-            pthread_mutex_unlock(p->lock)
+            pthread_mutex_unlock(p->lock);
 
             pthread_cond_wait(el->cond, el->lock);
-            pthread)mutex_unlock(el->lock);
+            pthread_mutex_unlock(el->lock);
             temp = temp->flink;
         }
         if (el->door_open == 1) {
@@ -161,16 +165,16 @@ void *elevator(void *arg)
         }
 
         if (direction == 1) {
-            move_to_floor(el, e->onfloor+1);
+            move_to_floor(el, el->onfloor+1);
         } else if (direction == 0) {
-            move_to_floor(el, e->onfloor-1);
+            move_to_floor(el, el->onfloor-1);
         }
 
         //LF
         check_for_people_to_unload(el);
 
 
-    //}
+    }
 
     return NULL;
 }
