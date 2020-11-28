@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="Elevate" targetName="elevator_part_2" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -27,10 +29,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5c1d5c7-b2a6-47e4-921a-27ec0d4269a3" name="Default Changelist" comment="elevator func">
+    <list default="true" id="e5c1d5c7-b2a6-47e4-921a-27ec0d4269a3" name="Default Changelist" comment="initialize funcs">
+      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elevator_part_2.c" beforeDir="false" afterPath="$PROJECT_DIR$/elevator_part_2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/makefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +42,17 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1klAa46nQKhQUjVYdvL0Ta813q1" />
   <component name="ProjectViewState">
@@ -56,12 +66,31 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="CLionExternalConfigurable" />
   </component>
-  <component name="RunManager">
-    <configuration name="ELP1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" EXPLICIT_BUILD_TARGET_NAME="all">
+  <component name="RunManager" selected="CMake Application.elevator_part_2">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ELP1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="elevator_part_2" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="10 1 .1 .1 .1 12 7" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Elevate" TARGET_NAME="elevator_part_2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Elevate" RUN_TARGET_NAME="elevator_part_2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.ELP1" />
+      <item itemvalue="CMake Application.elevator_part_2" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -197,14 +226,46 @@
     <option name="LAST_COMMIT_MESSAGE" value="elevator func" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1071" y="-370" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606435964664">
+    <state x="-1292" y="-238" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606600560200">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
-    <state x="-1071" y="-370" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606435964664" />
+    <state x="-1292" y="-238" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606600560200" />
     <state x="-1189" y="-218" key="#com.intellij.tools.ToolEditorDialog" timestamp="1606435924737">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
     <state x="-1189" y="-218" key="#com.intellij.tools.ToolEditorDialog/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606435924737" />
+    <state width="1033" height="358" key="GridCell.Tab.0.bottom" timestamp="1606600832797">
+      <screen x="-1920" y="-595" width="1920" height="1057" />
+    </state>
+    <state width="1033" height="358" key="GridCell.Tab.0.bottom/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606600832797" />
+    <state width="1033" height="358" key="GridCell.Tab.0.center" timestamp="1606600832795">
+      <screen x="-1920" y="-595" width="1920" height="1057" />
+    </state>
+    <state width="1033" height="358" key="GridCell.Tab.0.center/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606600832795" />
+    <state width="1033" height="358" key="GridCell.Tab.0.left" timestamp="1606600832795">
+      <screen x="-1920" y="-595" width="1920" height="1057" />
+    </state>
+    <state width="1033" height="358" key="GridCell.Tab.0.left/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606600832795" />
+    <state width="1033" height="358" key="GridCell.Tab.0.right" timestamp="1606600832796">
+      <screen x="-1920" y="-595" width="1920" height="1057" />
+    </state>
+    <state width="1033" height="358" key="GridCell.Tab.0.right/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606600832796" />
+    <state width="1033" height="358" key="GridCell.Tab.1.bottom" timestamp="1606600833609">
+      <screen x="-1920" y="-595" width="1920" height="1057" />
+    </state>
+    <state width="1033" height="358" key="GridCell.Tab.1.bottom/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606600833609" />
+    <state width="1033" height="358" key="GridCell.Tab.1.center" timestamp="1606600833607">
+      <screen x="-1920" y="-595" width="1920" height="1057" />
+    </state>
+    <state width="1033" height="358" key="GridCell.Tab.1.center/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606600833607" />
+    <state width="1033" height="358" key="GridCell.Tab.1.left" timestamp="1606600833607">
+      <screen x="-1920" y="-595" width="1920" height="1057" />
+    </state>
+    <state width="1033" height="358" key="GridCell.Tab.1.left/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606600833607" />
+    <state width="1033" height="358" key="GridCell.Tab.1.right" timestamp="1606600833608">
+      <screen x="-1920" y="-595" width="1920" height="1057" />
+    </state>
+    <state width="1033" height="358" key="GridCell.Tab.1.right/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606600833608" />
     <state x="-1453" y="-416" key="SettingsEditor" timestamp="1606435930336">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
@@ -223,13 +284,24 @@
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
     <state x="-1066" y="-313" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606435925987" />
-    <state x="-1675" y="-434" width="586" height="735" key="find.popup" timestamp="1606445606297">
+    <state x="-1675" y="-434" width="586" height="735" key="find.popup" timestamp="1606600130371">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
-    <state x="-1675" y="-434" width="586" height="735" key="find.popup/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606445606297" />
+    <state x="-1675" y="-434" width="586" height="735" key="find.popup/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606600130371" />
     <state x="-1717" y="-360" width="670" height="676" key="search.everywhere.popup" timestamp="1606436239551">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
     <state x="-1717" y="-360" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606436239551" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/elevator_part_2.c</url>
+          <line>128</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
