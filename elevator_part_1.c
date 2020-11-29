@@ -97,6 +97,7 @@ void *elevator(void *arg)
     while (1) {
         // if no people in simulation yet
         pthread_mutex_lock(el->es->lock);
+
         while(dll_empty(people_list)) {
             pthread_cond_wait(holding, el->es->lock);
         }
@@ -105,7 +106,7 @@ void *elevator(void *arg)
         // When the elevator gets a person to service . . .
         pthread_mutex_lock(el->es->lock);
         p = jval_v(dll_val(dll_first(people_list)));
-        dll_delete_node(people_list->flink); // may also need to delete the backlink?
+        dll_delete_node(people_list->flink);
         pthread_mutex_unlock(el->es->lock);
 
         // it moves to the appropriate floor and opens its door.

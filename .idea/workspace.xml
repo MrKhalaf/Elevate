@@ -20,7 +20,7 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="Elevate" targetName="elevator_part_2" />
+      <config projectName="Elevate" targetName="elevator_part_1" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -29,8 +29,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5c1d5c7-b2a6-47e4-921a-27ec0d4269a3" name="Default Changelist" comment="fixed ending early error">
+    <list default="true" id="e5c1d5c7-b2a6-47e4-921a-27ec0d4269a3" name="Default Changelist" comment="not getting off, lock stuck in skeleton line 158">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elevator_part_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/elevator_part_1.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elevator_part_2.c" beforeDir="false" afterPath="$PROJECT_DIR$/elevator_part_2.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +68,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="CLionExternalConfigurable" />
   </component>
-  <component name="RunManager" selected="CMake Application.elevator_part_2">
+  <component name="RunManager" selected="CMake Application.elevator_part_1">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
@@ -82,7 +84,12 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="elevator_part_2" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="10 1 .1 .1 .1 12 7" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Elevate" TARGET_NAME="elevator_part_2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Elevate" RUN_TARGET_NAME="elevator_part_2">
+    <configuration name="elevator_part_1" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="10 1 .1 .1 .1 12 7" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Elevate" TARGET_NAME="elevator_part_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Elevate" RUN_TARGET_NAME="elevator_part_1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="elevator_part_2" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="10 1 .1 .1 .1 12 7" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Elevate" TARGET_NAME="elevator_part_2" RUN_TARGET_PROJECT_NAME="Elevate" RUN_TARGET_NAME="elevator_part_2">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -90,6 +97,7 @@
     <list>
       <item itemvalue="CMake Application.ELP1" />
       <item itemvalue="CMake Application.elevator_part_2" />
+      <item itemvalue="CMake Application.elevator_part_1" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -212,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606610088232</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="not getting off, lock stuck in skeleton line 158">
+      <created>1606616002035</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1606616002036</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,58 +254,59 @@
     <MESSAGE value="elevator func" />
     <MESSAGE value="Debugging woo!" />
     <MESSAGE value="fixed ending early error" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed ending early error" />
+    <MESSAGE value="not getting off, lock stuck in skeleton line 158" />
+    <option name="LAST_COMMIT_MESSAGE" value="not getting off, lock stuck in skeleton line 158" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1292" y="-238" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606601675230">
+    <state x="-1292" y="-286" width="1071" height="748" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606617545528">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
-    <state x="-1292" y="-238" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606601675230" />
+    <state x="-1292" y="-286" width="1071" height="748" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606617545528" />
     <state x="-1189" y="-218" key="#com.intellij.tools.ToolEditorDialog" timestamp="1606435924737">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
     <state x="-1189" y="-218" key="#com.intellij.tools.ToolEditorDialog/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606435924737" />
-    <state width="1245" height="280" key="GridCell.Tab.0.bottom" timestamp="1606615951511">
+    <state width="1245" height="341" key="GridCell.Tab.0.bottom" timestamp="1606617760749">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
-    <state width="1245" height="280" key="GridCell.Tab.0.bottom/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606615951511" />
-    <state width="1245" height="280" key="GridCell.Tab.0.center" timestamp="1606615951509">
+    <state width="1245" height="341" key="GridCell.Tab.0.bottom/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606617760749" />
+    <state width="1245" height="341" key="GridCell.Tab.0.center" timestamp="1606617760747">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
-    <state width="1245" height="280" key="GridCell.Tab.0.center/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606615951509" />
-    <state width="1245" height="280" key="GridCell.Tab.0.left" timestamp="1606615951508">
+    <state width="1245" height="341" key="GridCell.Tab.0.center/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606617760747" />
+    <state width="1245" height="341" key="GridCell.Tab.0.left" timestamp="1606617760746">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
-    <state width="1245" height="280" key="GridCell.Tab.0.left/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606615951508" />
-    <state width="1245" height="280" key="GridCell.Tab.0.right" timestamp="1606615951510">
+    <state width="1245" height="341" key="GridCell.Tab.0.left/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606617760746" />
+    <state width="1245" height="341" key="GridCell.Tab.0.right" timestamp="1606617760748">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
-    <state width="1245" height="280" key="GridCell.Tab.0.right/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606615951510" />
-    <state width="1245" height="280" key="GridCell.Tab.1.bottom" timestamp="1606615870579">
+    <state width="1245" height="341" key="GridCell.Tab.0.right/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606617760748" />
+    <state width="1245" height="341" key="GridCell.Tab.1.bottom" timestamp="1606617761567">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
-    <state width="1245" height="280" key="GridCell.Tab.1.bottom/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606615870579" />
-    <state width="1245" height="280" key="GridCell.Tab.1.center" timestamp="1606615870578">
+    <state width="1245" height="341" key="GridCell.Tab.1.bottom/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606617761567" />
+    <state width="1245" height="341" key="GridCell.Tab.1.center" timestamp="1606617761567">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
-    <state width="1245" height="280" key="GridCell.Tab.1.center/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606615870578" />
-    <state width="1245" height="280" key="GridCell.Tab.1.left" timestamp="1606615870577">
+    <state width="1245" height="341" key="GridCell.Tab.1.center/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606617761567" />
+    <state width="1245" height="341" key="GridCell.Tab.1.left" timestamp="1606617761566">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
-    <state width="1245" height="280" key="GridCell.Tab.1.left/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606615870577" />
-    <state width="1245" height="280" key="GridCell.Tab.1.right" timestamp="1606615870579">
+    <state width="1245" height="341" key="GridCell.Tab.1.left/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606617761566" />
+    <state width="1245" height="341" key="GridCell.Tab.1.right" timestamp="1606617761567">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
-    <state width="1245" height="280" key="GridCell.Tab.1.right/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606615870579" />
+    <state width="1245" height="341" key="GridCell.Tab.1.right/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606617761567" />
     <state x="-1453" y="-416" key="SettingsEditor" timestamp="1606435930336">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
     <state x="-1453" y="-416" key="SettingsEditor/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606435930336" />
-    <state x="-1703" y="-406" key="Vcs.Push.Dialog.v2" timestamp="1606615972229">
+    <state x="-1703" y="-406" key="Vcs.Push.Dialog.v2" timestamp="1606618167986">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
     <state x="163" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.852@0.23.1440.852" timestamp="1606610089619" />
-    <state x="-1703" y="-406" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606615972229" />
+    <state x="-1703" y="-406" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606618167986" />
     <state x="-1435" y="-166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606614482404">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
@@ -304,14 +320,14 @@
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
     <state x="-1728" y="-330" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606615644615" />
-    <state x="-1675" y="-434" width="841" height="735" key="find.popup" timestamp="1606615244226">
+    <state x="-1675" y="-434" width="920" height="735" key="find.popup" timestamp="1606618052089">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
-    <state x="-1675" y="-434" width="841" height="735" key="find.popup/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606615244226" />
-    <state x="-1717" y="-360" width="670" height="676" key="search.everywhere.popup" timestamp="1606436239551">
+    <state x="-1675" y="-434" width="920" height="735" key="find.popup/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606618052089" />
+    <state x="-1717" y="-360" width="670" height="676" key="search.everywhere.popup" timestamp="1606617966790">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
-    <state x="-1717" y="-360" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606436239551" />
+    <state x="-1717" y="-360" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606617966790" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -336,12 +352,26 @@
           <line>150</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/elevator_part_2.c</url>
+          <line>110</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/elevator_part_2.c</url>
+          <line>115</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/elevator_part_1.c</url>
+          <line>99</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
-        <watch expression="el-&gt;onfloor" language="ObjectiveC" />
-        <watch expression="e-&gt;lock" />
+        <watch expression="people_list" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>

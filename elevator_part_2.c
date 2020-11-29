@@ -94,7 +94,7 @@ void check_for_people_to_unload(Elevator * el, Dllist to_unload, vpointer * el_v
             }
             printf("%s %s is inside the elevator going to floor %d\n", p->fname, p->lname, p->to);
 
-            pthread_mutex_lock(el->lock);
+            pthread_mutex_lock(p->lock);
             pthread_cond_signal(p->cond);
             pthread_mutex_lock(el->lock);
             pthread_cond_wait(el->cond, el->lock);
@@ -106,19 +106,16 @@ void check_for_people_to_unload(Elevator * el, Dllist to_unload, vpointer * el_v
 }
 
 void check_for_people_to_load(Elevator * el, Dllist to_unload, int direction, vpointer * el_vpointer) {
-//    printf("checking to load\n");
+
     pthread_mutex_lock(el_vpointer->global_lock);
-//    printf("locked\n");
-    //Dllist temp = el_vpointer->people_list->flink;
+
     Dllist temp;
-//    printf("temp created\n");
     temp = dll_first(el_vpointer->people_list);
-    //while (!dll_empty(temp) || temp != NULL) {
-//    printf("1");
+
     while (temp != el_vpointer->people_list && !dll_empty(el_vpointer->people_list)) {
-//        printf("2");
+
         Person * p = (Person *)(temp->val.v);
-        Dllist temp2 = temp->flink;
+        Dllist temp2 = dll_next(temp);
 
         if (  (el->onfloor == p->from) && (((p->to > el->onfloor) && (direction == 1)) || ((p->to < el->onfloor) && (direction == 0)))) {
             dll_append(to_unload, temp->val);
