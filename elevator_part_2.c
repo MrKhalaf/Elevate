@@ -104,7 +104,6 @@ void check_for_people_to_unload(Elevator * el, Dllist to_unload) {
 void check_for_people_to_load(Elevator * el, Dllist to_unload, int direction) {
     pthread_mutex_lock(global_lock);
     Dllist temp = people_list->flink;
-    //while (!dll_empty(temp) || temp != NULL) {
     while (temp != people_list && people_list != NULL) {
         Person * p = (Person *)(temp->val.v);
 
@@ -143,24 +142,25 @@ void *elevator(void *arg)
 
         //LF
         if (!dll_empty(people_list)) {
-            check_for_people_to_load(el, to_unload, direction);
+            if (to_unload != NULL) {
+                check_for_people_to_load(el, to_unload, direction);
+                Dllist temp = to_unload->flink;
+                while (temp->flink != NULL) {
+                    p = (Person *) temp->val.v;
+                    if (el->door_open == 0) {
+                        open_door(el);
+                    }
 
-            Dllist temp = to_unload->flink;
-            while (temp->flink != NULL) {
-                p = (Person *) temp->val.v;
-                if (el->door_open == 0) {
-                    open_door(el);
+                    pthread_mutex_lock(p->lock);
+                    p->e = el;
+                    pthread_cond_signal(p->cond);
+                    pthread_mutex_lock(el->lock);
+                    pthread_mutex_unlock(p->lock);
+
+                    pthread_cond_wait(el->cond, el->lock);
+                    pthread_mutex_unlock(el->lock);
+                    temp = temp->flink;
                 }
-
-                pthread_mutex_lock(p->lock);
-                p->e = el;
-                pthread_cond_signal(p->cond);
-                pthread_mutex_lock(el->lock);
-                pthread_mutex_unlock(p->lock);
-
-                pthread_cond_wait(el->cond, el->lock);
-                pthread_mutex_unlock(el->lock);
-                temp = temp->flink;
             }
         }
 
