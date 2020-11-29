@@ -33,7 +33,7 @@ void initialize_simulation(Elevator_Simulation *es)
     vpointer1->global_lock = (pthread_mutex_t *) malloc(sizeof(pthread_mutex_t));
     pthread_mutex_init(vpointer1->global_lock, NULL);
 
-    es->v = vpointer1;    //void pointer to list of people
+    es->v = vpointer1;    //pointer to list of people, conditions, locks
 
 }
 
@@ -109,8 +109,10 @@ void check_for_people_to_load(Elevator * el, Dllist to_unload, int direction, vp
     printf("checking to load\n");
     pthread_mutex_lock(el_vpointer->global_lock);
     printf("locked\n");
-    Dllist temp = el_vpointer->people_list->flink;
-    //Dllist temp = dll_first(el_vpointer->people_list);
+    //Dllist temp = el_vpointer->people_list->flink;
+    Dllist temp;
+    printf("temp created\n");
+    temp = dll_first(el_vpointer->people_list);
     //while (!dll_empty(temp) || temp != NULL) {
     printf("1");
     while (temp != el_vpointer->people_list && !dll_empty(el_vpointer->people_list)) {
@@ -136,7 +138,7 @@ void *elevator(void *arg)
     Elevator *el = (Elevator *) arg;
     Person *p;
     int direction = 1;
-    Dllist to_unload = NULL;
+    Dllist to_unload = new_dllist();
     vpointer *el_vpointer = (vpointer *)(el->es->v);
 
     while (1) {

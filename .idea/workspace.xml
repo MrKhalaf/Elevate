@@ -30,7 +30,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5c1d5c7-b2a6-47e4-921a-27ec0d4269a3" name="Default Changelist" comment="fixed ending early error">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elevator_part_2.c" beforeDir="false" afterPath="$PROJECT_DIR$/elevator_part_2.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
