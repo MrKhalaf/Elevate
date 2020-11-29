@@ -78,10 +78,10 @@ void person_done(Person *p)
     pthread_mutex_unlock(el->lock);
 }
 
-void check_for_people_to_unload(Elevator * el) {
+void check_for_people_to_unload(Elevator * el, Dllist to_unload) {
     Dllist temp = el->people->flink;
     //iterate through people on the elevator
-    while (!dll_empty(temp)) {
+    while (temp != to_unload && to_unload != NULL) {
         Person *p = (Person *) (temp->val.v);
 
         //if person is getting off, signal person
@@ -104,7 +104,8 @@ void check_for_people_to_unload(Elevator * el) {
 void check_for_people_to_load(Elevator * el, Dllist to_unload, int direction) {
     pthread_mutex_lock(global_lock);
     Dllist temp = people_list->flink;
-    while (!dll_empty(temp) || temp != NULL) {
+    //while (!dll_empty(temp) || temp != NULL) {
+    while (temp != people_list && people_list != NULL) {
         Person * p = (Person *)(temp->val.v);
 
         if (  (el->onfloor == p->from) && (((p->to > el->onfloor) && (direction == 1)) || ((p->to < el->onfloor) && (direction == 0)))) {
@@ -174,7 +175,7 @@ void *elevator(void *arg)
         }
 
         //LF
-        check_for_people_to_unload(el);
+        check_for_people_to_unload(el, to_unload);
 
 
     }
