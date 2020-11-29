@@ -30,6 +30,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5c1d5c7-b2a6-47e4-921a-27ec0d4269a3" name="Default Changelist" comment="fixed ending early error">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elevator_part_2.c" beforeDir="false" afterPath="$PROJECT_DIR$/elevator_part_2.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +42,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -248,60 +250,64 @@
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
     <state x="-1189" y="-218" key="#com.intellij.tools.ToolEditorDialog/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606435924737" />
-    <state width="1878" height="358" key="GridCell.Tab.0.bottom" timestamp="1606605805633">
+    <state width="1245" height="280" key="GridCell.Tab.0.bottom" timestamp="1606615951511">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.0.bottom/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606605805633" />
-    <state width="1878" height="358" key="GridCell.Tab.0.center" timestamp="1606605805632">
+    <state width="1245" height="280" key="GridCell.Tab.0.bottom/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606615951511" />
+    <state width="1245" height="280" key="GridCell.Tab.0.center" timestamp="1606615951509">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.0.center/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606605805632" />
-    <state width="1878" height="358" key="GridCell.Tab.0.left" timestamp="1606605805631">
+    <state width="1245" height="280" key="GridCell.Tab.0.center/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606615951509" />
+    <state width="1245" height="280" key="GridCell.Tab.0.left" timestamp="1606615951508">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.0.left/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606605805631" />
-    <state width="1878" height="358" key="GridCell.Tab.0.right" timestamp="1606605805632">
+    <state width="1245" height="280" key="GridCell.Tab.0.left/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606615951508" />
+    <state width="1245" height="280" key="GridCell.Tab.0.right" timestamp="1606615951510">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.0.right/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606605805632" />
-    <state width="1878" height="358" key="GridCell.Tab.1.bottom" timestamp="1606605806633">
+    <state width="1245" height="280" key="GridCell.Tab.0.right/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606615951510" />
+    <state width="1245" height="280" key="GridCell.Tab.1.bottom" timestamp="1606615870579">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.1.bottom/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606605806633" />
-    <state width="1878" height="358" key="GridCell.Tab.1.center" timestamp="1606605806632">
+    <state width="1245" height="280" key="GridCell.Tab.1.bottom/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606615870579" />
+    <state width="1245" height="280" key="GridCell.Tab.1.center" timestamp="1606615870578">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.1.center/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606605806632" />
-    <state width="1878" height="358" key="GridCell.Tab.1.left" timestamp="1606605806631">
+    <state width="1245" height="280" key="GridCell.Tab.1.center/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606615870578" />
+    <state width="1245" height="280" key="GridCell.Tab.1.left" timestamp="1606615870577">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.1.left/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606605806631" />
-    <state width="1878" height="358" key="GridCell.Tab.1.right" timestamp="1606605806632">
+    <state width="1245" height="280" key="GridCell.Tab.1.left/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606615870577" />
+    <state width="1245" height="280" key="GridCell.Tab.1.right" timestamp="1606615870579">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.1.right/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606605806632" />
+    <state width="1245" height="280" key="GridCell.Tab.1.right/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606615870579" />
     <state x="-1453" y="-416" key="SettingsEditor" timestamp="1606435930336">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
     <state x="-1453" y="-416" key="SettingsEditor/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606435930336" />
-    <state x="163" y="175" key="Vcs.Push.Dialog.v2" timestamp="1606610089619">
-      <screen x="0" y="23" width="1440" height="852" />
+    <state x="-1703" y="-406" key="Vcs.Push.Dialog.v2" timestamp="1606615972229">
+      <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
     <state x="163" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.852@0.23.1440.852" timestamp="1606610089619" />
-    <state x="-1703" y="-406" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606600877807" />
-    <state x="364" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606588749731">
-      <screen x="0" y="23" width="1440" height="852" />
+    <state x="-1703" y="-406" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606615972229" />
+    <state x="-1435" y="-166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606614482404">
+      <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
     <state x="364" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.852@0.23.1440.852" timestamp="1606588749731" />
-    <state x="-1435" y="-166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606444286303" />
+    <state x="-1435" y="-166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606614482404" />
     <state x="-1066" y="-313" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey" timestamp="1606435925987">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
     <state x="-1066" y="-313" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606435925987" />
-    <state x="-1675" y="-434" width="586" height="735" key="find.popup" timestamp="1606600130371">
+    <state x="-1728" y="-330" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1606615644615">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
-    <state x="-1675" y="-434" width="586" height="735" key="find.popup/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606600130371" />
+    <state x="-1728" y="-330" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606615644615" />
+    <state x="-1675" y="-434" width="841" height="735" key="find.popup" timestamp="1606615244226">
+      <screen x="-1920" y="-595" width="1920" height="1057" />
+    </state>
+    <state x="-1675" y="-434" width="841" height="735" key="find.popup/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606615244226" />
     <state x="-1717" y="-360" width="670" height="676" key="search.everywhere.popup" timestamp="1606436239551">
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
@@ -310,23 +316,32 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/elevator_skeleton.c</url>
-          <line>259</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/elevator_skeleton.c</url>
           <line>342</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/elevator_part_2.c</url>
+          <line>86</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/elevator_skeleton.c</url>
+          <line>176</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/elevator_skeleton.c</url>
+          <line>150</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
-        <watch expression="people_list" language="ObjectiveC" />
-        <watch expression="dll_empty(people_list)" language="ObjectiveC" />
-        <watch expression="p == NULL" language="ObjectiveC" />
+        <watch expression="el-&gt;onfloor" language="ObjectiveC" />
+        <watch expression="e-&gt;lock" />
       </configuration>
     </watches-manager>
   </component>
