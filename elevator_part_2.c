@@ -1,9 +1,6 @@
-/* elevator_null.c
-   Null solution for the elevator threads lab.
-   Jim Plank
-   CS560
-   Lab 2
-   January, 2009
+/*
+ * We certify that this code was our own work. It was written without consulting tutors or code written by other students
+ * Lydia Feng and Mohammad Khalaf
  */
 
 #include <stdio.h>
@@ -52,7 +49,7 @@ void wait_for_elevator(Person *p)
 
     pthread_mutex_lock(p->es->lock);
     dll_append(position->people_list, new_jval_v(p));
-    pthread_cond_signal(position->holding);
+        pthread_cond_signal(position->holding);
     pthread_mutex_unlock(p->es->lock);
 
     pthread_mutex_lock(p->lock);
@@ -83,27 +80,7 @@ void person_done(Person *p)
 }
 
 void check_for_people_to_unload(Elevator * el, Dllist to_unload, vpointer * el_vpointer) {
-//    Dllist temp = el->people->flink;
-//    //iterate through people on the elevator
-//    while (temp != el->people && !dll_empty(el->people)) {
-//        Person *p = (Person *) (temp->val.v);
-//        //if person is getting off, signal person
-//        if (el->onfloor == p->to) {
-//            if (el->door_open == 0) {
-//                open_door(el);
-//            }
-//            printf("%s %s is inside the elevator going to floor %d\n", p->fname, p->lname, p->to);
-//
-//            pthread_mutex_lock(p->lock);
-//            pthread_cond_signal(p->cond);
-//            pthread_mutex_lock(el->lock);
-//            pthread_mutex_unlock(p->lock);
-//            pthread_cond_wait(el->cond, el->lock);
-//            pthread_mutex_unlock(el->lock);
-//        }
-//        temp = temp->flink;
-//
-//    }
+
     Dllist temp = dll_first(el->people);
     while (temp != dll_nil(el->people) && !dll_empty(el->people)) {
         Dllist next = dll_next(temp);
@@ -164,8 +141,6 @@ void *elevator(void *arg)
         } else if (el->onfloor == el->es->nfloors) {
             direction = 0;
         }
-        printf("sending elevators the right direction\n");
-
         //LF
 
         check_for_people_to_load(el, to_unload, direction, el_vpointer);
