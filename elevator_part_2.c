@@ -83,24 +83,43 @@ void person_done(Person *p)
 }
 
 void check_for_people_to_unload(Elevator * el, Dllist to_unload, vpointer * el_vpointer) {
-    Dllist temp = el->people->flink;
-    //iterate through people on the elevator
-    while (temp != el->people && !dll_empty(el->people)) {
-        Person *p = (Person *) (temp->val.v);
-        //if person is getting off, signal person
-        if (el->onfloor == p->to) {
+//    Dllist temp = el->people->flink;
+//    //iterate through people on the elevator
+//    while (temp != el->people && !dll_empty(el->people)) {
+//        Person *p = (Person *) (temp->val.v);
+//        //if person is getting off, signal person
+//        if (el->onfloor == p->to) {
+//            if (el->door_open == 0) {
+//                open_door(el);
+//            }
+//            printf("%s %s is inside the elevator going to floor %d\n", p->fname, p->lname, p->to);
+//
+//            pthread_mutex_lock(p->lock);
+//            pthread_cond_signal(p->cond);
+//            pthread_mutex_lock(el->lock);
+//            pthread_mutex_unlock(p->lock);
+//            pthread_cond_wait(el->cond, el->lock);
+//            pthread_mutex_unlock(el->lock);
+//        }
+//        temp = temp->flink;
+//
+//    }
+    Dllist temp = dll_first(el->people);
+    while (temp != dll_nil(el->people) && !dll_empty(el->people)) {
+        Dllist next = dll_next(temp);
+        Person *p = (Person *) temp->val.v;
+        if (p->to == el->onfloor) {
             if (el->door_open == 0) {
                 open_door(el);
             }
-            printf("%s %s is inside the elevator going to floor %d\n", p->fname, p->lname, p->to);
-
             pthread_mutex_lock(p->lock);
             pthread_cond_signal(p->cond);
             pthread_mutex_lock(el->lock);
+            pthread_mutex_unlock(p->lock);
             pthread_cond_wait(el->cond, el->lock);
             pthread_mutex_unlock(el->lock);
         }
-        temp = temp->flink;
+        temp = next;
 
     }
 }
@@ -139,7 +158,6 @@ void *elevator(void *arg)
     vpointer *el_vpointer = (vpointer *)(el->es->v);
 
     while (1) {
-
 
         if (el->onfloor == 1) {
             direction = 1;
