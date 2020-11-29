@@ -29,8 +29,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5c1d5c7-b2a6-47e4-921a-27ec0d4269a3" name="Default Changelist" comment="not getting off, lock stuck in skeleton line 158">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e5c1d5c7-b2a6-47e4-921a-27ec0d4269a3" name="Default Changelist" comment="error fixed!!!!!">
       <change beforePath="$PROJECT_DIR$/elevator_part_2.c" beforeDir="false" afterPath="$PROJECT_DIR$/elevator_part_2.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -224,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606616002036</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="error fixed!!!!!">
+      <created>1606619134513</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1606619134513</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +258,8 @@
     <MESSAGE value="Debugging woo!" />
     <MESSAGE value="fixed ending early error" />
     <MESSAGE value="not getting off, lock stuck in skeleton line 158" />
-    <option name="LAST_COMMIT_MESSAGE" value="not getting off, lock stuck in skeleton line 158" />
+    <MESSAGE value="error fixed!!!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="error fixed!!!!!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1292" y="-286" width="1071" height="748" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606617545528">
@@ -299,10 +306,10 @@
       <screen x="-1920" y="-595" width="1920" height="1057" />
     </state>
     <state x="-1453" y="-416" key="SettingsEditor/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606435930336" />
-    <state x="-1703" y="-406" key="Vcs.Push.Dialog.v2" timestamp="1606618167986">
-      <screen x="-1920" y="-595" width="1920" height="1057" />
+    <state x="163" y="175" key="Vcs.Push.Dialog.v2" timestamp="1606619135943">
+      <screen x="0" y="23" width="1440" height="852" />
     </state>
-    <state x="163" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.852@0.23.1440.852" timestamp="1606610089619" />
+    <state x="163" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.852@0.23.1440.852" timestamp="1606619135943" />
     <state x="-1703" y="-406" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-595.1920.1057@-1920.-595.1920.1057" timestamp="1606618167986" />
     <state x="-1435" y="-166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606614482404">
       <screen x="-1920" y="-595" width="1920" height="1057" />

@@ -105,8 +105,9 @@ void check_for_people_to_unload(Elevator * el, Dllist to_unload, vpointer * el_v
 //
 //    }
     Dllist temp = dll_first(el->people);
-    while (temp != dll_nil(el->people) && !dll_empty(el->people)) {
-        Dllist next = dll_next(temp);
+    //while (temp != dll_nil(el->people) && !dll_empty(el->people)) {
+    while(temp != el->people && !dll_empty(el->people)) {
+        Dllist next = temp->flink;
         Person *p = (Person *) temp->val.v;
         if (p->to == el->onfloor) {
             if (el->door_open == 0) {
@@ -134,7 +135,7 @@ void check_for_people_to_load(Elevator * el, Dllist to_unload, int direction, vp
     while (temp != el_vpointer->people_list && !dll_empty(el_vpointer->people_list)) {
 
         Person * p = (Person *)(temp->val.v);
-        Dllist temp2 = dll_next(temp);
+        Dllist temp2 = temp->flink;
 
         if (  (el->onfloor == p->from) && (((p->to > el->onfloor) && (direction == 1)) || ((p->to < el->onfloor) && (direction == 0)))) {
             dll_append(to_unload, temp->val);
