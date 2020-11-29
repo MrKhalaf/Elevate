@@ -1,10 +1,8 @@
-/* elevator_null.c
-   Null solution for the elevator threads lab.
-   Jim Plank
-   CS560
-   Lab 2
-   January, 2009
+/*
+ * We certify that this code was our own work. It was written without consulting tutors or code written by other students
+ * Lydia Feng and Mohammad Khalaf
  */
+
 
 #include <stdio.h>
 #include <stdlib.h>
